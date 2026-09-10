@@ -1,0 +1,29 @@
+ 
+ @use "mixins" as mx;
+
+.catego_ini_producto{
+    @include mx.valores_div_conten;
+}
+.Frutas_verduras{
+    @include mx.valores_div_conten_img;
+
+}
+.Fermentados{
+    @include mx.valores_div_conten_img;
+}
+.Hiervas{
+    @include mx.valores_div_conten_img;
+}
+.Jabones{
+    @include mx.valores_div_conten_img;
+}
+
+.div_img{
+    @include mx.valores_div_img;
+    img{
+        @include mx.valores_img;
+    }
+}
+.enlace_nombre{
+   @include mx.valores_a;
+}

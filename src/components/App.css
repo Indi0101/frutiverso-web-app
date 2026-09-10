@@ -1,0 +1,198 @@
+/*{outline: solid 2px rgb(46, 42, 165);}*/
+
+.flex-horizontal {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.flex-horizontal > div:first-child {
+  flex: 3;
+  background-color: beige;
+  padding: 1rem;
+}
+
+.flex-horizontal > div:last-child {
+  flex: 2;
+  border-radius: 8px;
+  border: 2px solid rgba(229, 245, 233, 0.884);
+  padding: 1rem;
+}
+.etiquetas_horizontales {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.etiquetas_horizontales > p {
+  margin-left: auto;
+}
+
+/* ✅ Nueva clase para agregar bordes a toda la línea */
+.borde-total {
+  border-top: 2px solid rgba(136, 148, 136, 0.884);
+  border-bottom: 2px solid rgba(136, 148, 136, 0.884);
+  border-radius: 2px;
+}
+.contenedor-btn-pagar {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.btn-pagar {
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-pagar:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+.letras_table{
+  font-size: 20px; /* Ajusta el tamaño según lo necesites */
+}
+
+/*//////////////////////////////////CARRUSEL/////////////////////////////////////////*/
+.carrusel{
+  position: relative;
+  width: 1800px;
+  height: 950px;
+  overflow: hidden;
+  margin: 2rem auto;
+  border-radius: 10px;
+  margin-top: 0px;
+ /* outline: solid #432188 3px;*/
+}
+.carrusel-track{
+  display: flex;
+  transition: transform 0.4s ease;
+  width: 1800px;
+ /* outline: black solid 3px;
+  background-color: #28a745;*/
+
+}
+.carrusel img{
+  width: 1800px;
+  height: 950px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.btn_carrusel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/*------------------------INICIOOOO----------------------------------*/
+.titulo_en_inicio{
+  text-align: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*-------------------------Pies de pagina-----------------------------*/
+.conte_pie_pagina{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+}
+.conte_1{
+  width: 40%;
+  height: 400px;
+}
+
+.proveedores{
+  width: 700px;
+  height: 200px;
+  margin-top: 100px;
+  margin-left: 60px;
+  background-color: #b0e3bc;
+  border-radius: 35px;
+  overflow: hidden;
+  position: relative; 
+ 
+}
+.proveedores::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("pagina/img_prove.jpg");
+  background-size: cover; /*ajusta la imagen al div*/
+  background-position: center;/*centra la imagen al div*/
+  background-repeat: no-repeat;
+  /*  z-index: -1; envia la imagen atras*/
+  opacity: 0.3;
+}
+.proveedores>*{
+  position: relative;
+  z-index: 1;
+}
+.texto_h4_pie{
+    display: block; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(6, 11, 1);
+    margin-left: 20px;
+    margin-top: 90px;
+}
+.btn-proveedores{
+  width: 150px;
+  height: 35px;
+  color: #b0e3bc;
+  background-color: #08240e;
+  margin-top: 20px;
+  margin-left: 25px;
+  border: none;
+  font-size:20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 10px;
+}
+.btn-proveedores:hover{
+  transform: scale(1.1);
+}
+.conte_2{
+  display: flex;
+  width: 60%;
+  height: 400px;
+}
+.div-cont2{
+   width: 100%;
+   margin-top: 25px;
+   font-size: larger;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   margin-left: 150px;
+}
+li{
+   list-style-type:none;
+}
+

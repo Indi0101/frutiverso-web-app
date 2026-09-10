@@ -1,0 +1,17 @@
+@use "mixins" as mx;
+
+.conte_receta_ini{
+    @include mx.valores_div_conten;
+}
+.recetas{
+    @include mx.valores_div_conten_img;
+}
+.div-img{
+    @include mx.valores_div_img;
+}
+img{
+        @include mx.valores_img;
+}
+.texto{
+    @include mx.valores_a;
+}
